@@ -62,3 +62,26 @@ body {
 .wrong {
     background-color: #f44336;
 }
+
+#scoreMessage {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#playAgain {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e1e111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+#playAgain:hover {
+    background-color: red;
+}

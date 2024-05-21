@@ -36,7 +36,7 @@ function loadQuestion() {
 
     optionButtons.forEach((button, index) => {
         button.textContent = q.options[index];
-        button.classList.remove('correct', 'wrong');
+        button.classList.remove('correct', 'wrong','clicked');
         button.disabled = false;
     });
 
@@ -66,8 +66,8 @@ function checkAnswer(button, index) {
         setTimeout(loadQuestion, 500);
     } else {
         setTimeout(() => {
-            alert('Quiz finished! Your score: ' + score);
-            window.location.href = 'index.html';
+            localStorage.setItem('quizScore', score);
+            window.location.href = 'score.html';
         }, 500);
     }
 }
