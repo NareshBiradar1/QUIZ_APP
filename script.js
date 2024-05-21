@@ -63,6 +63,12 @@ const optionButtons = [
     document.getElementById('option4')
 ];
 const scoreElement = document.getElementById('scoreValue');
+const currentQuestionElement = document.getElementById('currentQuestion');
+const totalQuestionsElement = document.getElementById('totalQuestions');
+const progressElement = document.getElementById('progress');
+
+totalQuestionsElement.textContent = questions.length;
+
 
 optionButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
@@ -81,6 +87,9 @@ function loadQuestion() {
     });
 
     scoreElement.textContent = score;
+
+    currentQuestionElement.textContent = currentQuestion + 1;
+    progressElement.style.width = ((currentQuestion) / questions.length) * 100 + '%';
 }
 
 function checkAnswer(button, index) {

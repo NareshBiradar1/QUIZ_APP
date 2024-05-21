@@ -13,6 +13,41 @@ body {
     margin-top: 10%;
 }
 
+#progressContainer {
+    position: fixed;
+    top: 10;
+    left: 10%;
+    font-size: 1.5rem;
+    background-color: #0056b3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
+}
+
+#questionProgress {
+    margin-bottom: 5px;
+}
+
+#progressBar {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+#progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s;
+}
+
+.questionContainer{
+    padding-top: 17%;
+}
+
 #question {
     font-size: 24px;
     margin-bottom: 20px;
@@ -49,7 +84,7 @@ body {
     top: 10;
     right: 10%;
     font-size: 25px;
-    background-color: #fff;
+    background-color: yellow;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -69,7 +104,7 @@ body {
     color: #333;
 }
 
-#playAgain {
+#playAgain , #goHome {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -81,7 +116,9 @@ body {
     transition: background-color 0.2s;
     text-decoration: none;
 }
-
-#playAgain:hover {
+#playAgain{
+    margin-right: 2rem;
+}
+#playAgain:hover , #goHome:hover{
     background-color: red;
 }

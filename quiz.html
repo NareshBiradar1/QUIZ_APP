@@ -9,12 +9,20 @@
 <body>
     <div class="container">
         <div id="score">Score: <span id="scoreValue">0</span></div>
-        <div id="question">Sample Question</div>
-        <div id="options">
-            <button class="option" id="option1">Option 1</button>
-            <button class="option" id="option2">Option 2</button>
-            <button class="option" id="option3">Option 3</button>
-            <button class="option" id="option4">Option 4</button>
+        <div id="progressContainer">
+            <div id="questionProgress">Question: <span id="currentQuestion">0</span> / <span id="totalQuestions">10</span></div>
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div class="questionContainer">
+            <div id="question">Sample Question</div>
+            <div id="options">
+                <button class="option" id="option1">Option 1</button>
+                <button class="option" id="option2">Option 2</button>
+                <button class="option" id="option3">Option 3</button>
+                <button class="option" id="option4">Option 4</button>
+            </div>
         </div>
     </div>
 
